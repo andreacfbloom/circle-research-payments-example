@@ -1,5 +1,7 @@
 # Circle Research Payments Example
 
+[![CI](https://github.com/andreacfbloom/circle-research-payments-example/actions/workflows/test.yml/badge.svg)](https://github.com/andreacfbloom/circle-research-payments-example/actions/workflows/test.yml)
+
 A public Arc Testnet reference for selling one fixed, source-linked research update through Circle Gateway and x402.
 
 This repository is the reviewable companion to EquityLayer's Circle grant application. It contains a sanitized payment adapter, a provider-neutral delivery state machine, an OpenAPI contract, synthetic examples, and tests. It does not contain EquityLayer's private product code, paid research, user data, wallet keys, or production credentials.
