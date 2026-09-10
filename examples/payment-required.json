@@ -1,0 +1,21 @@
+{
+  "x402Version": 2,
+  "resource": {
+    "url": "https://example.invalid/v1/research/update",
+    "description": "Get one prepared example research update.",
+    "mimeType": "application/json"
+  },
+  "accepts": [
+    {
+      "scheme": "exact",
+      "network": "eip155:5042002",
+      "asset": "0x3600000000000000000000000000000000000000",
+      "amount": "50000",
+      "payTo": "0x0000000000000000000000000000000000000001",
+      "extra": {
+        "capability_id": "example-research-update",
+        "capability_version": "v1"
+      }
+    }
+  ]
+}

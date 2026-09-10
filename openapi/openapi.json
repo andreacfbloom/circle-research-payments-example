@@ -1,0 +1,65 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Circle Research Payments Example",
+    "version": "0.1.0",
+    "description": "A fixed synthetic research update paid through Circle Gateway on Arc Testnet."
+  },
+  "servers": [
+    {
+      "url": "https://example.invalid"
+    }
+  ],
+  "paths": {
+    "/v1/research/update": {
+      "post": {
+        "operationId": "buyExampleResearchUpdate",
+        "summary": "Buy one prepared example research update.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResearchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Circle settled the payment and the delivery record is durable."
+          },
+          "400": {
+            "description": "The fixed request is invalid."
+          },
+          "402": {
+            "description": "Payment is required or the signed terms do not match the resource."
+          },
+          "409": {
+            "description": "The payment identifier was reused for a different request."
+          },
+          "503": {
+            "description": "The pack, storage, configuration, or reconciliation path is unavailable."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ResearchRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["capability_id", "capability_version"],
+        "properties": {
+          "capability_id": {
+            "const": "example-research-update"
+          },
+          "capability_version": {
+            "const": "v1"
+          }
+        }
+      }
+    }
+  }
+}

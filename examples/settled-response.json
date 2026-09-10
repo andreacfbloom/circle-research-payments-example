@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "capability_id": "example-research-update",
+  "capability_version": "v1",
+  "as_of": "2026-01-31",
+  "fresh_until": "2026-02-28",
+  "output_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "result": {
+    "status": "synthetic_example",
+    "what_changed": ["Illustrative evidence changed from the saved baseline."],
+    "limitations": ["This file contains no real company or market data."]
+  },
+  "receipt": {
+    "receipt_reference": "00000000-0000-4000-8000-000000000001",
+    "status": "settled",
+    "provider": "circle_gateway",
+    "network": "eip155:5042002",
+    "currency": "USDC",
+    "amount_atomic": "50000",
+    "transaction_reference": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "settled_at": "2026-02-01T00:00:00.000Z"
+  }
+}

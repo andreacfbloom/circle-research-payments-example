@@ -1,0 +1,24 @@
+{
+  "name": "circle-research-payments-example",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@circle-fin/x402-batching": "3.4.0",
+    "@x402/core": "2.22.0",
+    "@x402/evm": "2.22.0",
+    "viem": "2.55.15"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "license": "MIT"
+}
